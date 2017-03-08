@@ -1,0 +1,123 @@
+/*
+ * App.css
+ * Author: Daniel Costa Ramos - 200354269
+ * Web	site: Portfolio
+ * Description: CSS file to manage the style for the pages.
+ */
+
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Days+One|Paytone+One');
+
+body {
+    background-color: #d4f0fc;
+    font-family: 'Lato', sans-serif;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font: 100%;
+}
+
+
+#teste-border {
+    outline: 1px solid red;
+    /* id="teste-border"*/
+}
+
+/**********************************************************/
+/** HEADER CSS ********************************************/
+/**********************************************************/
+
+header {
+    text-transform: uppercase;
+}
+
+header nav {
+    background-color: #01303f;
+}
+
+header a{
+    color: #d4f0fc;
+}
+
+header .icon-bar {
+  color: #d4f0fc;
+  border-color: #d4f0fc;
+  background-color: #d4f0fc;
+}
+header nav ul li.active, li:hover {
+    border-bottom: 3px solid #d4f0fc;
+}
+
+/**********************************************************/
+/** FOOTER CSS ********************************************/
+/**********************************************************/
+
+footer {
+    color: #d4f0fc;
+}
+
+footer nav {
+    background-color: #01303f;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/**********************************************************/
+/** CSS TO MANAGE THE PAGES INTO INDEX.HTML ***************/
+/**********************************************************/
+
+#pageAbout {
+    display: block;
+}
+
+#pageProjects, #pageContact {
+    display: none;
+} 
+
+/**********************************************************/
+/** ABOUT ME | PROJECTS CSS *******************************/
+/**********************************************************/
+
+div.row > div > figure > img {
+    border-radius: 100%;
+    width: 230px;
+    border: 1px solid black;
+}
+
+#pageAbout {
+    font-size: 1.5em;
+    color: #02577a;
+    /*resolved the problem with the footer overlaping the content - need to dig more*/
+    margin-bottom: 70px;
+    /*text-align: justify;*/
+}
+
+div.personal-quote {
+    font-family: 'Days One', sans-serif;
+    /*font-family: 'Paytone One', sans-serif;*/
+    margin-top: 40px;
+}
+
+div.row > h1 {
+    padding-left: 15%;
+    font-weight: bold;
+    color: #01303f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+i.fa-chevron-right {
+    color: #d54a50;
+}
+
+#pageProjects {
+    margin-bottom: 70px;
+}
+
+#pageProjects img {
+    min-height: 250px;
+    max-height: 250px;
+}

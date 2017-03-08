@@ -1,0 +1,27 @@
+{
+  "name": "Portfolio",
+  "homepage": "https://github.com/danielRamosGithub/portfolio",
+  "authors": [
+    "Daniel Ramos <danielramos.dcr@gmail.com>"
+  ],
+  "description": "Sample Portfolio for Daniel C. Ramos",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
