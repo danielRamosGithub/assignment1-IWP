@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>PortFolio</title>
+        <title>Assignemnt 1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--My CSS Section-->
-        <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="./Scripts/lib/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./Content/app.css">
-    <!--Script from 3wSchools to help load html from other html files-->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/app.css">
     </head>
     <body>
-        
-        <h1>Assingment - Intro the Web Programming</h1>
+
+        <div class="container">
+            <div class="row">
+                <h1>Book Lovers</h1>
+            </div>
+            <div class="row">
+
+                <div class="container">
+
+                    <form class="navbar-form navbar-left" role="search" action="process_form.php" method="post">
+                        <label for="book-title">Book Title</label>
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control" placeholder="Book Title" aria-describedby="basic-addon1" name="book-title" required>
+                        </div>
+
+                        <label for="book-genre">Book Genre</label>
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control" placeholder="Book Genre" aria-describedby="basic-addon1" name="book-genre" required>
+                        </div>
+
+                        <label for="book-review">Book Review</label>
+                        <div class="input-group col-md-12">
+                            <textarea type="text" class="form-control" rows="5" placeholder="Book Review" aria-describedby="basic-addon1" name="book-review"></textarea>
+                        </div>
+
+                        <label for="book-reviewer">Who reviewed the book</label>
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control" placeholder="Who reviewed the book" aria-describedby="basic-addon1" name="book-reviewer" required>
+                        </div>
+
+                        <label for="reviewer-email">Reviewer email</label>
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control" placeholder="Reviewer email" aria-describedby="basic-addon2" name="reviewer-email" required>
+                        </div>
+
+                        <label for="store-url">Your vanity URL</label>
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control" id="store-url" placeholder="A link to a store where you can find the book" aria-describedby="basic-addon3" name="store-url">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                            <a href="list-books.php"> <button type="button" class="btn btn-info">List of Books</button></a>
+                        </div>
+                        
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
 
     <!--JavaScript Section-->
-    <script src="./Scripts/lib/jquery/dist/jquery.min.js"></script>
-    <script src="./Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./Scripts/jquery.min.js"></script>
+    <script src="./Scripts/bootstrap.min.js"></script>
     <script src="./Scripts/app.js"></script>
-    <!--Function to help include html from other files into this one-->
-    <script>w3IncludeHTML();</script>
     </body>
 </html>

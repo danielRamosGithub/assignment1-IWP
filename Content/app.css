@@ -22,3 +22,8 @@ body {
     outline: 1px solid red;
     /* id="teste-border"*/
 }
+
+div.input-group {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
